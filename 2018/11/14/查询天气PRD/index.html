@@ -87,10 +87,15 @@
 <meta property="og:site_name" content="开悟实验室">
 <meta property="og:description" content="如意天气技能支持国内国外5万个城市、十项天气数据、七天内的天气预报查询 。自然语言理解、300+天气实体识别、多轮对话实现天气预报智能化查询。随 时随地轻松掌握天气变化情况。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/06/10/5cfdfd4166ee298759.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/10/5cfdfd13253c479089.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/10/5cfdfd61e82e974162.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/10/5cfdfd817160592630.png">
 <meta property="og:updated_time" content="2019-06-10T06:52:51.311Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="查询天气PRD">
 <meta name="twitter:description" content="如意天气技能支持国内国外5万个城市、十项天气数据、七天内的天气预报查询 。自然语言理解、300+天气实体识别、多轮对话实现天气预报智能化查询。随 时随地轻松掌握天气变化情况。">
+<meta name="twitter:image" content="https://i.loli.net/2019/06/10/5cfdfd4166ee298759.png">
 
 
 
@@ -352,10 +357,13 @@
       
 
       
-        <p>如意天气技能支持国内国外5万个城市、十项天气数据、七天内的天气预报查询 。自然语言理解、300+天气实体识别、多轮对话实现天气预报智能化查询。随 时随地轻松掌握天气变化情况。<br><a id="more"></a></p>
+        <p>如意天气技能支持国内国外5万个城市、十项天气数据、七天内的天气预报查询 。自然语言理解、300+天气实体识别、多轮对话实现天气预报智能化查询。随 时随地轻松掌握天气变化情况。</p>
+<a id="more"></a>
+
 <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>天气技能虽然不是热门技能，但是依然有一些硬件合作伙伴使用，在我接手的时候只有一个PRD文档，里面没有交互原型和功能说明。我需要尽快熟悉这一新产品。</p>
 <blockquote>
-<p><strong> 备注：</strong><br>技能:skill,类似于语音交互的app。技能一般植入与手机app,语音助理（siri/alexa/小爱同学…）智能手表（出门问问）智能音箱（Amazon Encho/Google Home/）      </p>
+<p>** 备注：**  
+技能:skill,类似于语音交互的app。技能一般植入与手机app,语音助理（siri/alexa/小爱同学…）智能手表（出门问问）智能音箱（Amazon Encho/Google Home/）      </p>
 </blockquote>
 <h2 id="目标用户"><a href="#目标用户" class="headerlink" title="目标用户"></a>目标用户</h2><p>勾选如意精选插件——天气查询，想了解天气各项情况的用户。</p>
 <h2 id="产品目标"><a href="#产品目标" class="headerlink" title="产品目标"></a>产品目标</h2><p>设计实现对天气各项指数的查询，包含通过时间、地点、城市等多项条件组合查询天气情况。实现多轮天气查询，满足受众对天气的大部分需求。</p>
@@ -397,527 +405,520 @@
 <li>Q：北京明天会下雪吗</li>
 <li>A：目测不会下雪，放心吧。 2月08日 星期四 北京多云 -7℃ ~ 3℃ 降雨概率：0%</li>
 </ul>
-<h2 id="典型任务"><a href="#典型任务" class="headerlink" title="典型任务"></a>典型任务</h2><p><img src="" data-echo="https://i.loli.net/2019/06/10/5cfdfd4166ee298759.png" alt="查询天气典型任务" title="查询天气典型任务"></p>
-<h2 id="交互原型"><a href="#交互原型" class="headerlink" title="交互原型"></a>交互原型</h2><p><img src="" data-echo="https://i.loli.net/2019/06/10/5cfdfd13253c479089.png" alt="查询天气交互原型3.0" title="查询天气交互原型3.0"></p>
+<h2 id="典型任务"><a href="#典型任务" class="headerlink" title="典型任务"></a>典型任务</h2><p><img src="https://i.loli.net/2019/06/10/5cfdfd4166ee298759.png" alt="查询天气典型任务" title="查询天气典型任务"></p>
+<h2 id="交互原型"><a href="#交互原型" class="headerlink" title="交互原型"></a>交互原型</h2><p><img src="https://i.loli.net/2019/06/10/5cfdfd13253c479089.png" alt="查询天气交互原型3.0" title="查询天气交互原型3.0"></p>
 <blockquote>
-<p><strong> 备注：</strong><br>暗号:人跟人之间会通过特殊信号、也就是“暗号”来交流，意图和意图之间也可以通过暗号来连接。意图之间只有相同暗号才能产生多伦对话。</p>
+<p>** 备注：**  
+暗号:人跟人之间会通过特殊信号、也就是“暗号”来交流，意图和意图之间也可以通过暗号来连接。意图之间只有相同暗号才能产生多伦对话。</p>
 </blockquote>
-<h2 id="用户语言和机器语言的转化"><a href="#用户语言和机器语言的转化" class="headerlink" title="用户语言和机器语言的转化"></a>用户语言和机器语言的转化</h2><p>用户询问天气带有感觉、口语的特点，因此我们需要把它们归类转化为天气可识别的机器语言，同理我们在给用户返回结果时，需要将天气参数翻译成用户语言。<br><img src="" data-echo="https://i.loli.net/2019/06/10/5cfdfd61e82e974162.png" alt="用户语言和机器语言的转化" title="用户语言和机器语言的转化"></p>
-<h2 id="查询天气可用性核心测例"><a href="#查询天气可用性核心测例" class="headerlink" title="查询天气可用性核心测例"></a>查询天气可用性核心测例</h2><p><img src="" data-echo="https://i.loli.net/2019/06/10/5cfdfd817160592630.png" alt="查询天气可用性测例" title="查询天气可用性测试的部分截图"></p>
+<h2 id="用户语言和机器语言的转化"><a href="#用户语言和机器语言的转化" class="headerlink" title="用户语言和机器语言的转化"></a>用户语言和机器语言的转化</h2><p>用户询问天气带有感觉、口语的特点，因此我们需要把它们归类转化为天气可识别的机器语言，同理我们在给用户返回结果时，需要将天气参数翻译成用户语言。<br><img src="https://i.loli.net/2019/06/10/5cfdfd61e82e974162.png" alt="用户语言和机器语言的转化" title="用户语言和机器语言的转化"></p>
+<h2 id="查询天气可用性核心测例"><a href="#查询天气可用性核心测例" class="headerlink" title="查询天气可用性核心测例"></a>查询天气可用性核心测例</h2><p><img src="https://i.loli.net/2019/06/10/5cfdfd817160592630.png" alt="查询天气可用性测例" title="查询天气可用性测试的部分截图"></p>
 <h2 id="边界限制"><a href="#边界限制" class="headerlink" title="边界限制"></a>边界限制</h2><table>
 <thead>
 <tr>
 <th>名称</th>
-<th style="text-align:center">数据量</th>
+<th align="center">数据量</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>城市</td>
-<td style="text-align:center">国内+海外5万个城市</td>
+<td align="center">国内+海外5万个城市</td>
 </tr>
 <tr>
 <td>天气预报</td>
-<td style="text-align:center">3天</td>
+<td align="center">3天</td>
 </tr>
 <tr>
 <td>每小时天气</td>
-<td style="text-align:center">1天</td>
+<td align="center">1天</td>
 </tr>
 <tr>
 <td>生活指数</td>
-<td style="text-align:center">开启</td>
+<td align="center">开启</td>
 </tr>
 <tr>
 <td>实况天气</td>
-<td style="text-align:center">开启</td>
+<td align="center">开启</td>
 </tr>
 <tr>
 <td>空气质量指数</td>
-<td style="text-align:center">开启</td>
+<td align="center">开启</td>
 </tr>
 <tr>
 <td>灾害预警</td>
-<td style="text-align:center">关闭</td>
+<td align="center">关闭</td>
 </tr>
 <tr>
 <td>景点天气</td>
-<td style="text-align:center">开启</td>
+<td align="center">开启</td>
 </tr>
 <tr>
 <td>空气质量预报</td>
-<td style="text-align:center">关闭</td>
+<td align="center">关闭</td>
 </tr>
 <tr>
 <td>历史天气</td>
-<td style="text-align:center">关闭</td>
+<td align="center">关闭</td>
 </tr>
 <tr>
 <td>每天访问量</td>
-<td style="text-align:center">3万次/天</td>
+<td align="center">3万次/天</td>
 </tr>
 <tr>
 <td>额外访问量</td>
-<td style="text-align:center">无</td>
+<td align="center">无</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="功能描述"><a href="#功能描述" class="headerlink" title="功能描述"></a>功能描述</h2><table>
 <thead>
 <tr>
 <th>功能名称</th>
-<th style="text-align:center">功能情况</th>
+<th align="center">功能情况</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>模糊天气查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期天气查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期天气查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点天气查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊天气实体查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期天气实体查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点天气实体查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期天气实体查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊湿度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期湿度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点湿度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期湿度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊紫外线查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期紫外线查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期紫外线查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点紫外线查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊能见度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期能见度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点能见度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期能见度查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊风向、风力查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期风向风力查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点风向风力查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期风向风力查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊空气质量查询</td>
-<td style="text-align:center">当日、多轮地点、日期</td>
+<td align="center">当日、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点空气质量查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊冷热查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点+日期冷热查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>地点冷热查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>日期冷热查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊温差查询</td>
-<td style="text-align:center">未来七天、多轮地点、日期</td>
+<td align="center">未来七天、多轮地点、日期</td>
 </tr>
 <tr>
 <td>模糊穿衣指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>地点穿衣指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>模糊防晒指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>地点防晒指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>模糊洗车指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>地点洗车指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>运动指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>舒适度指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>感冒指数</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>日出日落</td>
-<td style="text-align:center">当日、多轮地点</td>
+<td align="center">当日、多轮地点</td>
 </tr>
 <tr>
 <td>旅游指数</td>
-<td style="text-align:center">/</td>
+<td align="center">/</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><table>
 <thead>
 <tr>
 <th>功能点序号</th>
-<th style="text-align:center">优先级</th>
-<th style="text-align:center">说明</th>
+<th align="center">优先级</th>
+<th align="center">说明</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="验收测试"><a href="#验收测试" class="headerlink" title="验收测试"></a>验收测试</h2><p>核心测例目前参考典型任务</p>
 <h2 id="天气接口参数说明"><a href="#天气接口参数说明" class="headerlink" title="天气接口参数说明"></a>天气接口参数说明</h2><table>
 <thead>
 <tr>
 <th>参数</th>
-<th style="text-align:center">描述</th>
-<th style="text-align:center">示例值</th>
+<th align="center">描述</th>
+<th align="center">示例值</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>location</td>
-<td style="text-align:center">位置</td>
-<td style="text-align:center">上海</td>
+<td align="center">位置</td>
+<td align="center">上海</td>
 </tr>
 <tr>
 <td>service</td>
-<td style="text-align:center">服务</td>
-<td style="text-align:center">weather</td>
+<td align="center">服务</td>
+<td align="center">weather</td>
 </tr>
 <tr>
 <td>city</td>
-<td style="text-align:center">城市</td>
-<td style="text-align:center">上海</td>
+<td align="center">城市</td>
+<td align="center">上海</td>
 </tr>
 <tr>
 <td>cnty</td>
-<td style="text-align:center">城市所属国家名称</td>
-<td style="text-align:center">中国</td>
+<td align="center">城市所属国家名称</td>
+<td align="center">中国</td>
 </tr>
 <tr>
 <td>id</td>
-<td style="text-align:center">城市ID</td>
-<td style="text-align:center">CN101020100</td>
+<td align="center">城市ID</td>
+<td align="center">CN101020100</td>
 </tr>
 <tr>
 <td>lat</td>
-<td style="text-align:center">城市纬度</td>
-<td style="text-align:center">31.23170662</td>
+<td align="center">城市纬度</td>
+<td align="center">31.23170662</td>
 </tr>
 <tr>
 <td>lon</td>
-<td style="text-align:center">城市经度</td>
-<td style="text-align:center">121.47264099</td>
+<td align="center">城市经度</td>
+<td align="center">121.47264099</td>
 </tr>
 <tr>
 <td>month_day</td>
-<td style="text-align:center">月</td>
-<td style="text-align:center">9月04日</td>
+<td align="center">月</td>
+<td align="center">9月04日</td>
 </tr>
 <tr>
 <td>week_day</td>
-<td style="text-align:center">星期</td>
-<td style="text-align:center">星期二</td>
+<td align="center">星期</td>
+<td align="center">星期二</td>
 </tr>
 <tr>
 <td>air</td>
-<td style="text-align:center">空气质量</td>
-<td style="text-align:center">中</td>
+<td align="center">空气质量</td>
+<td align="center">中</td>
 </tr>
 <tr>
 <td>comf</td>
-<td style="text-align:center">舒适度指数</td>
-<td style="text-align:center">较不舒适</td>
+<td align="center">舒适度指数</td>
+<td align="center">较不舒适</td>
 </tr>
 <tr>
 <td>cw</td>
-<td style="text-align:center">洗车指数</td>
-<td style="text-align:center">较适宜</td>
+<td align="center">洗车指数</td>
+<td align="center">较适宜</td>
 </tr>
 <tr>
 <td>drsg</td>
-<td style="text-align:center">穿衣指数</td>
-<td style="text-align:center">热</td>
+<td align="center">穿衣指数</td>
+<td align="center">热</td>
 </tr>
 <tr>
 <td>flu</td>
-<td style="text-align:center">感冒指数</td>
-<td style="text-align:center">少发</td>
+<td align="center">感冒指数</td>
+<td align="center">少发</td>
 </tr>
 <tr>
 <td>sport</td>
-<td style="text-align:center">运动指数</td>
-<td style="text-align:center">较适宜</td>
+<td align="center">运动指数</td>
+<td align="center">较适宜</td>
 </tr>
 <tr>
 <td>trav</td>
-<td style="text-align:center">旅游指数</td>
-<td style="text-align:center">适宜</td>
+<td align="center">旅游指数</td>
+<td align="center">适宜</td>
 </tr>
 <tr>
 <td>uv</td>
-<td style="text-align:center">紫外线指数</td>
-<td style="text-align:center">很强</td>
+<td align="center">紫外线指数</td>
+<td align="center">很强</td>
 </tr>
 <tr>
 <td>aqi</td>
-<td style="text-align:center">空气质量指数</td>
-<td style="text-align:center">68</td>
+<td align="center">空气质量指数</td>
+<td align="center">68</td>
 </tr>
 <tr>
 <td>qlty</td>
-<td style="text-align:center">空气质量</td>
-<td style="text-align:center">良</td>
+<td align="center">空气质量</td>
+<td align="center">良</td>
 </tr>
 <tr>
 <td>pm25</td>
-<td style="text-align:center">pm25</td>
-<td style="text-align:center">49</td>
+<td align="center">pm25</td>
+<td align="center">49</td>
 </tr>
 <tr>
 <td>pm10</td>
-<td style="text-align:center">pm10</td>
-<td style="text-align:center">63</td>
+<td align="center">pm10</td>
+<td align="center">63</td>
 </tr>
 <tr>
 <td>no2</td>
-<td style="text-align:center">二氧化氮</td>
-<td style="text-align:center">42</td>
+<td align="center">二氧化氮</td>
+<td align="center">42</td>
 </tr>
 <tr>
 <td>so2</td>
-<td style="text-align:center">二氧化硫</td>
-<td style="text-align:center">12</td>
+<td align="center">二氧化硫</td>
+<td align="center">12</td>
 </tr>
 <tr>
 <td>co</td>
-<td style="text-align:center">一氧化碳</td>
-<td style="text-align:center">12</td>
+<td align="center">一氧化碳</td>
+<td align="center">12</td>
 </tr>
 <tr>
 <td>o3</td>
-<td style="text-align:center">臭氧</td>
-<td style="text-align:center">57</td>
+<td align="center">臭氧</td>
+<td align="center">57</td>
 </tr>
 <tr>
 <td>update</td>
-<td style="text-align:center">接口更新时间</td>
-<td style="text-align:center">2018-09-04 03:45</td>
+<td align="center">接口更新时间</td>
+<td align="center">2018-09-04 03:45</td>
 </tr>
 <tr>
 <td>mr</td>
-<td style="text-align:center">月升时间</td>
-<td style="text-align:center">00:00</td>
+<td align="center">月升时间</td>
+<td align="center">00:00</td>
 </tr>
 <tr>
 <td>ms</td>
-<td style="text-align:center">月落时间</td>
-<td style="text-align:center">13:35</td>
+<td align="center">月落时间</td>
+<td align="center">13:35</td>
 </tr>
 <tr>
 <td>sr</td>
-<td style="text-align:center">日出时间</td>
-<td style="text-align:center">05:32</td>
+<td align="center">日出时间</td>
+<td align="center">05:32</td>
 </tr>
 <tr>
 <td>ss</td>
-<td style="text-align:center">日落时间</td>
-<td style="text-align:center">18:12</td>
+<td align="center">日落时间</td>
+<td align="center">18:12</td>
 </tr>
 <tr>
 <td>code_d</td>
-<td style="text-align:center">白天天气状况代码</td>
-<td style="text-align:center">101</td>
+<td align="center">白天天气状况代码</td>
+<td align="center">101</td>
 </tr>
 <tr>
 <td>code_n</td>
-<td style="text-align:center">晚间天气状况代码</td>
-<td style="text-align:center">100</td>
+<td align="center">晚间天气状况代码</td>
+<td align="center">100</td>
 </tr>
 <tr>
 <td>txt_d</td>
-<td style="text-align:center">白天天气状况描述</td>
-<td style="text-align:center">多云</td>
+<td align="center">白天天气状况描述</td>
+<td align="center">多云</td>
 </tr>
 <tr>
 <td>txt_n</td>
-<td style="text-align:center">晚间天气状况描述</td>
-<td style="text-align:center">晴</td>
+<td align="center">晚间天气状况描述</td>
+<td align="center">晴</td>
 </tr>
 <tr>
 <td>hum</td>
-<td style="text-align:center">相对湿度</td>
-<td style="text-align:center">69</td>
+<td align="center">相对湿度</td>
+<td align="center">69</td>
 </tr>
 <tr>
 <td>pcpn</td>
-<td style="text-align:center">降水量</td>
-<td style="text-align:center">1.0</td>
+<td align="center">降水量</td>
+<td align="center">1.0</td>
 </tr>
 <tr>
 <td>pop</td>
-<td style="text-align:center">降水概率</td>
-<td style="text-align:center">55</td>
+<td align="center">降水概率</td>
+<td align="center">55</td>
 </tr>
 <tr>
 <td>pres</td>
-<td style="text-align:center">大气压强</td>
-<td style="text-align:center">1002</td>
+<td align="center">大气压强</td>
+<td align="center">1002</td>
 </tr>
 <tr>
 <td>max</td>
-<td style="text-align:center">最高温度</td>
-<td style="text-align:center">32</td>
+<td align="center">最高温度</td>
+<td align="center">32</td>
 </tr>
 <tr>
 <td>min</td>
-<td style="text-align:center">最低温度</td>
-<td style="text-align:center">25</td>
+<td align="center">最低温度</td>
+<td align="center">25</td>
 </tr>
 <tr>
 <td>uv</td>
-<td style="text-align:center">紫外线强度指数</td>
-<td style="text-align:center">10</td>
+<td align="center">紫外线强度指数</td>
+<td align="center">10</td>
 </tr>
 <tr>
 <td>vis</td>
-<td style="text-align:center">能见度</td>
-<td style="text-align:center">19</td>
+<td align="center">能见度</td>
+<td align="center">19</td>
 </tr>
 <tr>
 <td>deg</td>
-<td style="text-align:center">风向360角度</td>
-<td style="text-align:center">-1</td>
+<td align="center">风向360角度</td>
+<td align="center">-1</td>
 </tr>
 <tr>
 <td>dir</td>
-<td style="text-align:center">风向</td>
-<td style="text-align:center">无持续风向</td>
+<td align="center">风向</td>
+<td align="center">无持续风向</td>
 </tr>
 <tr>
 <td>sc</td>
-<td style="text-align:center">风力</td>
-<td style="text-align:center">1-2</td>
+<td align="center">风力</td>
+<td align="center">1-2</td>
 </tr>
 <tr>
 <td>spd</td>
-<td style="text-align:center">风速（公里/小时）</td>
-<td style="text-align:center">9</td>
+<td align="center">风速（公里/小时）</td>
+<td align="center">9</td>
 </tr>
 <tr>
 <td>condition</td>
-<td style="text-align:center">天气状况</td>
-<td style="text-align:center">多云转晴</td>
+<td align="center">天气状况</td>
+<td align="center">多云转晴</td>
 </tr>
 <tr>
 <td>speech</td>
-<td style="text-align:center">生活建议</td>
-<td style="text-align:center">没有霜，但还是要注意保暖哦</td>
+<td align="center">生活建议</td>
+<td align="center">没有霜，但还是要注意保暖哦</td>
 </tr>
 <tr>
 <td>weatherEntity</td>
-<td style="text-align:center">天气实体</td>
-<td style="text-align:center">霜</td>
+<td align="center">天气实体</td>
+<td align="center">霜</td>
 </tr>
 <tr>
 <td>is_weather</td>
-<td style="text-align:center">对否有</td>
-<td style="text-align:center">no</td>
+<td align="center">对否有</td>
+<td align="center">no</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
       
     </div>
@@ -954,8 +955,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/14/数学小课堂PRD/" rel="next" title="数学小课堂PRD">
-                <i class="fa fa-chevron-left"></i> 数学小课堂PRD
+              <a href="/2018/11/13/英语美文/" rel="next" title="英语美文 11-13">
+                <i class="fa fa-chevron-left"></i> 英语美文 11-13
               </a>
             
           </div>
@@ -964,8 +965,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/15/哈药招采-折线图卡片配色策略/" rel="prev" title="哈药招采-折线图卡片配色策略">
-                哈药招采-折线图卡片配色策略 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/14/数学小课堂PRD/" rel="prev" title="数学小课堂PRD">
+                数学小课堂PRD <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
