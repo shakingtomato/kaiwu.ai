@@ -87,13 +87,10 @@
 <meta property="og:site_name" content="开悟实验室">
 <meta property="og:description" content="它们具有属性（关于对象的信息）和方法（对象具有的函数或功能）。对象是非常强大的数据类型，当你使用 JavaScript 或任何其他面向对象编程语言时，将经常看到对象类型。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://img.okay.do/fcc899785ad96fbcbd53d2d6c9ea8349_W820_H654_G0@0e_580w">
-<meta property="og:image" content="https://img.okay.do/60916ecc1b2c1c3850f24d3d2d4144d0_W1354_H990_G0@0e_580w">
 <meta property="og:updated_time" content="2019-06-09T16:15:36.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript-对象">
 <meta name="twitter:description" content="它们具有属性（关于对象的信息）和方法（对象具有的函数或功能）。对象是非常强大的数据类型，当你使用 JavaScript 或任何其他面向对象编程语言时，将经常看到对象类型。">
-<meta name="twitter:image" content="https://img.okay.do/fcc899785ad96fbcbd53d2d6c9ea8349_W820_H654_G0@0e_580w">
 
 
 
@@ -355,43 +352,32 @@
       
 
       
-        <p>它们具有属性（关于对象的信息）和方法（对象具有的函数或功能）。对象是非常强大的数据类型，当你使用 JavaScript 或任何其他面向对象编程语言时，将经常看到对象类型。</p>
-<a id="more"></a>
-<h3 id="对象字面值-方法和属性"><a class="header-anchor" href="#对象字面值-方法和属性">¶</a>对象字面值、方法和属性</h3>
-<p>你可以使用对象字面值记法定义对象：</p>
+        <p>它们具有属性（关于对象的信息）和方法（对象具有的函数或功能）。对象是非常强大的数据类型，当你使用 JavaScript 或任何其他面向对象编程语言时，将经常看到对象类型。<br><a id="more"></a></p>
+<h3 id="对象字面值、方法和属性"><a href="#对象字面值、方法和属性" class="headerlink" title="对象字面值、方法和属性"></a>对象字面值、方法和属性</h3><p>你可以使用对象字面值记法定义对象：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObj = &#123;</span><br><span class="line">  color: <span class="string">"orange"</span>,</span><br><span class="line">  shape: <span class="string">"sphere"</span>,</span><br><span class="line">  type: <span class="string">"food"</span>,</span><br><span class="line">  eat: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="string">"yummy"</span> &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">myObj.eat(); <span class="comment">// 方法</span></span><br><span class="line">myObj.color; <span class="comment">// 属性</span></span><br></pre></td></tr></table></figure>
-<h3 id="对象命名规则"><a class="header-anchor" href="#对象命名规则">¶</a>对象命名规则</h3>
-<h4 id="1-不能将数字用作对象属性名称的开头"><a class="header-anchor" href="#1-不能将数字用作对象属性名称的开头">¶</a>1.不能将数字用作对象属性名称的开头</h4>
-<p>举个错误的例子：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> peson &#123;</span><br><span class="line">  name:<span class="string">"John"</span>,</span><br><span class="line">  age:<span class="string">"55"</span>,</span><br><span class="line">  <span class="number">1</span>stChild:<span class="string">"James"</span>,  <span class="comment">// 错误</span></span><br><span class="line">  <span class="number">2</span>ndChild:<span class="string">"Jarred"</span>,  <span class="comment">// 错误</span></span><br><span class="line">  <span class="number">3</span>rdChild:<span class="string">"Alexis"</span>,  <span class="comment">// 错误      </span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="对象命名规则"><a href="#对象命名规则" class="headerlink" title="对象命名规则"></a>对象命名规则</h3><h4 id="1-不能将数字用作对象属性名称的开头"><a href="#1-不能将数字用作对象属性名称的开头" class="headerlink" title="1.不能将数字用作对象属性名称的开头"></a>1.不能将数字用作对象属性名称的开头</h4><p>举个错误的例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> peson &#123;</span><br><span class="line">  name:<span class="string">"John"</span>,</span><br><span class="line">  age:<span class="string">"55"</span>,</span><br><span class="line">  <span class="number">1</span>stChild:<span class="string">"James"</span>,  <span class="comment">// 错误</span></span><br><span class="line">  <span class="number">2</span>ndChild:<span class="string">"Jarred"</span>,  <span class="comment">// 错误</span></span><br><span class="line">  <span class="number">3</span>rdChild:<span class="string">"Alexis"</span>,  <span class="comment">// 错误      </span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>分别用括号表示法和点表示法来输出属性时:</p>
 <ul>
-<li>括号表示法</li>
-</ul>
+<li><p>括号表示法</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person[<span class="string">"1stChild"</span>];</span><br></pre></td></tr></table></figure>
-<ul>
-<li>点表示法:</li>
-</ul>
+</li>
+<li><p>点表示法:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person<span class="number">.1</span>stChild;</span><br></pre></td></tr></table></figure>
-<p>下面我们看下在Chrome console的效果</p>
-<p><img src="https://img.okay.do/fcc899785ad96fbcbd53d2d6c9ea8349_W820_H654_G0@0e_580w" alt="对象命名规则"></p>
-<p>正确的书写：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> peson &#123;</span><br><span class="line">  name:<span class="string">"John"</span>,</span><br><span class="line">  age:<span class="string">"55"</span>,</span><br><span class="line">  Children:[<span class="string">"James"</span>,<span class="string">"Jarred"</span>,<span class="string">"Alexis"</span>]    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="2-不能使用空格或连字符"><a class="header-anchor" href="#2-不能使用空格或连字符">¶</a>2.不能使用空格或连字符</h4>
-<p>举个错误的例子：<br>
-第一种使用空格，第二种使用连字符</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> garage &#123;</span><br><span class="line">  <span class="string">"fire truck"</span>:&#123;  <span class="comment">// 错误</span></span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"red"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"6"</span>        </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"race-car"</span>:&#123;  <span class="comment">// 错误</span></span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"blue"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"4"</span>        </span><br><span class="line">  &#125;      </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>点表示法:</li>
+</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">garage.fire truck;</span><br></pre></td></tr></table></figure>
+<p>下面我们看下在Chrome console的效果  </p>
+<p><img src="" data-echo="https://img.okay.do/fcc899785ad96fbcbd53d2d6c9ea8349_W820_H654_G0@0e_580w" alt="对象命名规则"></p>
+<p>正确的书写：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> peson &#123;</span><br><span class="line">  name:<span class="string">"John"</span>,</span><br><span class="line">  age:<span class="string">"55"</span>,</span><br><span class="line">  Children:[<span class="string">"James"</span>,<span class="string">"Jarred"</span>,<span class="string">"Alexis"</span>]    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-不能使用空格或连字符"><a href="#2-不能使用空格或连字符" class="headerlink" title="2.不能使用空格或连字符"></a>2.不能使用空格或连字符</h4><p>举个错误的例子：<br>第一种使用空格，第二种使用连字符<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> garage &#123;</span><br><span class="line">  <span class="string">"fire truck"</span>:&#123;  <span class="comment">// 错误</span></span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"red"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"6"</span>        </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"race-car"</span>:&#123;  <span class="comment">// 错误</span></span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"blue"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"4"</span>        </span><br><span class="line">  &#125;      </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>点表示法:<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">garage.fire truck;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">garage.race-car;</span><br></pre></td></tr></table></figure>
 <p>下面我们看下在Chrome console的效果</p>
-<p><img src="https://img.okay.do/60916ecc1b2c1c3850f24d3d2d4144d0_W1354_H990_G0@0e_580w" alt="对象命名规则2"></p>
-<p>正确的书写:采用驼峰命名法</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> garage &#123;</span><br><span class="line">  <span class="string">"fireTruck"</span>:&#123;</span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"red"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"6"</span>        </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"raceCar"</span>:&#123;</span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"blue"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"4"</span>        </span><br><span class="line">  &#125;      </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="总结："><a class="header-anchor" href="#总结：">¶</a>总结：</h4>
-<p>可以随便使用大小写字母和数字，但是属性名称不要以数字开始。 字符串不需要放在引号里！如果是多个单词构成的属性，则采用驼峰式大小写形式。 属性名称里不要使用连字符</p>
+<p><img src="" data-echo="https://img.okay.do/60916ecc1b2c1c3850f24d3d2d4144d0_W1354_H990_G0@0e_580w" alt="对象命名规则2"></p>
+<p>正确的书写:采用驼峰命名法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> garage &#123;</span><br><span class="line">  <span class="string">"fireTruck"</span>:&#123;</span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"red"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"6"</span>        </span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"raceCar"</span>:&#123;</span><br><span class="line">    <span class="string">"color"</span>:<span class="string">"blue"</span>,</span><br><span class="line">    <span class="string">"wheels"</span>:<span class="string">"4"</span>        </span><br><span class="line">  &#125;      </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>可以随便使用大小写字母和数字，但是属性名称不要以数字开始。 字符串不需要放在引号里！如果是多个单词构成的属性，则采用驼峰式大小写形式。 属性名称里不要使用连字符</p>
 
       
     </div>
@@ -566,7 +552,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象字面值-方法和属性"><span class="nav-number">1.</span> <span class="nav-text">¶对象字面值、方法和属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象命名规则"><span class="nav-number">2.</span> <span class="nav-text">¶对象命名规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-不能将数字用作对象属性名称的开头"><span class="nav-number">2.1.</span> <span class="nav-text">¶1.不能将数字用作对象属性名称的开头</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-不能使用空格或连字符"><span class="nav-number">2.2.</span> <span class="nav-text">¶2.不能使用空格或连字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结："><span class="nav-number">2.3.</span> <span class="nav-text">¶总结：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象字面值、方法和属性"><span class="nav-number">1.</span> <span class="nav-text">对象字面值、方法和属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象命名规则"><span class="nav-number">2.</span> <span class="nav-text">对象命名规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-不能将数字用作对象属性名称的开头"><span class="nav-number">2.1.</span> <span class="nav-text">1.不能将数字用作对象属性名称的开头</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-不能使用空格或连字符"><span class="nav-number">2.2.</span> <span class="nav-text">2.不能使用空格或连字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结："><span class="nav-number">2.3.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol></div>
             
 
           </div>
