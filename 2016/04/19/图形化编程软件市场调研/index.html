@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="MUI,UI,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="背景VJC 4.1是Abilix C系列产品的编程软件，目前支持Mac OS以及Windows系统，新版本的VJC将能运行在移动端Android、IOS平板上，因此在交互及一些功能上在原版的基础上得到了进一步提升和改进。">
+<meta name="keywords" content="MUI,UI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图形化编程软件市场调研">
+<meta property="og:url" content="http://kaiwu.com/2016/04/19/图形化编程软件市场调研/index.html">
+<meta property="og:site_name" content="开悟实验室">
+<meta property="og:description" content="背景VJC 4.1是Abilix C系列产品的编程软件，目前支持Mac OS以及Windows系统，新版本的VJC将能运行在移动端Android、IOS平板上，因此在交互及一些功能上在原版的基础上得到了进一步提升和改进。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Scratch.jpg">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Blockly.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Ardublock.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Mindplus.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-EV3.jpeg">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Modkit%20arduino.jpg">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Sparki%20program.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-%E8%A1%A8%E6%A0%BC%E6%80%BB%E7%BB%93.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-icon%E8%BF%AD%E4%BB%A3.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-%E6%A8%A1%E5%9D%97%E8%BF%AD%E4%BB%A3.png">
+<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2.png">
+<meta property="og:updated_time" content="2019-06-22T17:11:55.025Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="图形化编程软件市场调研">
+<meta name="twitter:description" content="背景VJC 4.1是Abilix C系列产品的编程软件，目前支持Mac OS以及Windows系统，新版本的VJC将能运行在移动端Android、IOS平板上，因此在交互及一些功能上在原版的基础上得到了进一步提升和改进。">
+<meta name="twitter:image" content="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Scratch.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://kaiwu.com/2016/04/19/图形化编程软件市场调研/">
+
+
+
+
+
+  <title>图形化编程软件市场调研 | 开悟实验室</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">开悟实验室</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一无所知的世界，一直走下去才会有惊喜</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kaiwu.com/2016/04/19/图形化编程软件市场调研/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="shakingtomato">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="开悟实验室">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">图形化编程软件市场调研</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-19T00:00:00+08:00">
+                2016-04-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/MUI/" itemprop="url" rel="index">
+                    <span itemprop="name">MUI</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>VJC 4.1是Abilix C系列产品的编程软件，目前支持Mac OS以及Windows系统，新版本的VJC将能运行在移动端Android、IOS平板上，因此在交互及一些功能上在原版的基础上得到了进一步提升和改进。</p>
+<a id="more"></a>
+
+<h2 id="调研目的"><a href="#调研目的" class="headerlink" title="调研目的"></a>调研目的</h2><p>通过调研了解市面上面向儿童的图形化编程软件信息和交互逻辑及它们的优缺点，根据新版本的逻辑设计出符合移动端和交互逻辑的软件界面，我的工作是配合软件工程师、工业设计师提升新版本的交互和用户体验。</p>
+<h2 id="产品调研"><a href="#产品调研" class="headerlink" title="产品调研"></a>产品调研</h2><h3 id="Scratch"><a href="#Scratch" class="headerlink" title="Scratch"></a>Scratch</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Scratch.jpg" alt=""><br>Scratch是麻省理工媒体实验室终身幼稚园组开发的一套电脑程序开发平台，旨在让程序设计语言初学者不需先学习语言语法便能设计产品。开发者期望通过学习Scratch，启发和激励用户在愉快的环境下经由操作（如设计交互故事）去学习程序设计、数学和计算知识，同时获得创造性的思考，逻辑编程，和协同工作的体验。<br>Scratch 开发平台可安装在Mac OS X、Windows、Linux的平台上；自2.0之后，换用Actionscript编制，Scratch运行于浏览器。Scratch源码开放给非商业性质用途使用。<br>由于开源现在市面上特别是国内有很多图像化编程多多少少有Scratch的影子。</p>
+<h3 id="Blockly"><a href="#Blockly" class="headerlink" title="Blockly"></a>Blockly</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Blockly.png" alt=""><br>Blockly是google开发的一套图形化编辑外壳程序。或者说这是一个图形化的框架，已经集成了图形块的拼接、拖动、删除等，图形化脚本操作环境开发的很完善。不过这个框架的底层，也就是生成代码部分需要第三方去自行定义。例如图形化界面转成javascript就可以开发网页，转成arduino代码就可以针对开源硬件进行图形化编程，等等。由于这个框架使用方便，功能完备，所以有一些图形化软件就是基于blockly简单修改实现的。<br><a href="https://developers.google.com/blockly/" target="_blank" rel="noopener">https://developers.google.com/blockly/</a></p>
+<h3 id="Ardublock"><a href="#Ardublock" class="headerlink" title="Ardublock"></a>Ardublock</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Ardublock.png" alt=""><br>Ardublock是Arduino官方编程环境认可的第三方软件，基于Java开发，必须依附在Arduino软件下运行。区别于Arduino的文本式编程环境，Ardublock以搭建图形化积木的方式编程。这种方式会使编程的可视化和交互性加强，并且编程门槛降低，使没有编程经验的人也可以尝试给Arduino控制器编写程序。</p>
+<h3 id="Mind-（Mindplus）"><a href="#Mind-（Mindplus）" class="headerlink" title="Mind+（Mindplus）"></a>Mind+（Mindplus）</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Mindplus.png" alt=""><br>Mind+是一款特别的图形化开发工具，这个软件采用C++和Qt开发，界面精致，相对其他拼接指令式的编程软件，确实有一些新意。此软件通过抽象出软件开发中的命令流和数据流，模拟成图形界面中的红蓝折线，通过导线的流动体现出程序流程和数据传递的过程，使得初学者都很容易看懂。和ardublock类似，软件也是提供图形界面的表现层和操作层，而底层的编译下载直接调用arduino环境的命令行接口。</p>
+<h3 id="乐高-EV3"><a href="#乐高-EV3" class="headerlink" title="乐高 EV3"></a>乐高 EV3</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-EV3.jpeg" alt=""><br>EV3最大特点是无需使用计算机就可进行编程：EV3配备了一块“智能砖头”，用户可以使用它来对自己的机器人编辑各种指令。而在过去，使用者只能通过计算机来进行该操作。编程完成后，使用者还需要通过一根数据线将程序下载到机器人身上。但是现在，EV3完全不需要计算机。</p>
+<h3 id="Modkit-Micro"><a href="#Modkit-Micro" class="headerlink" title="Modkit Micro"></a>Modkit Micro</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Modkit%20arduino.jpg" alt=""><br>modkit micro最初是在Kickstarter众筹的项目，modkit micro是一个用于微控制器的图形编程环境。微控制器允许程序员和工程师为日常用品和电子设备添加行为。我们创建了modkit micro，将微控制器编程的世界带给大众。通过一个简单而强大的可视化编程界面，modkit micro几乎可以帮助任何人使任何东西变得更智能。</p>
+<h3 id="Sparki"><a href="#Sparki" class="headerlink" title="Sparki"></a>Sparki</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-Sparki%20program.png" alt=""><br>sparki 教你如何编码，电子部件如何工作，如何批判性思考和解决问题，STEM的所有元素（科学、技术、工程、数学）如何协同工作，以及机器人如何实际工作，以便你可以用机器人控制未来，而不是由它来控制。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-%E8%A1%A8%E6%A0%BC%E6%80%BB%E7%BB%93.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th align="right">总结</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scratch</td>
+<td align="right">起源于MIT媒体实验室，旨在推广教育儿童编程启蒙，软件开源，成本低，兼容平台广。国内外的图形化编程软件很多基于Scratch深度定制。</td>
+</tr>
+<tr>
+<td>EV3 Programmer</td>
+<td align="right">独立的硬件和软件体系，在儿童图形化编程里做的最早而且体系最完善的一个，功能强大，交互和UI设计都很出色。再加上乐高积木可玩性很高。</td>
+</tr>
+<tr>
+<td>Blockly</td>
+<td align="right">自Scratch后又一款开放程度很高的软件，虽然它的初始版本，对于儿童来说依然有难度，但是它的衍生版本很多做的都不错，比如Scratch Blocks、ozoblockly、blocklyprop等。</td>
+</tr>
+<tr>
+<td>Ardublock</td>
+<td align="right">由上海新车间创客开发，ArduBlock软件是Arduino官方编程环境的第三方软件，现在必须依附于Arduino软件下运行，区别于Arduino文本式编程环境，ArduBlock是以图形化积木搭建的方式编程的，这样的方式会使编程的可视化与交互性加强，编程门槛降低。表现层个人觉得还可以做到更好。</td>
+</tr>
+<tr>
+<td>Mind+</td>
+<td align="right">Mind+支持Arduino，目前一些功能还不是很完善，不过在设计和交互上比ardublok更胜一筹。</td>
+</tr>
+<tr>
+<td>Modkit Micro</td>
+<td align="right">只支持Arduino及其周边硬件，软件分主控制和传感器、数据运算模块、代码三块。</td>
+</tr>
+<tr>
+<td>Miniblop</td>
+<td align="right">基于Arduino的定制版，硬件还是软件都是比较粗糙。</td>
+</tr>
+</tbody></table>
+<p><strong>市面上图形化编程软件分为3类</strong></p>
+<ul>
+<li>1.自研软件。比如：乐高EV3</li>
+<li>2.arduino系。比如：Ardublock。</li>
+<li>3.scratch系。比如：Modkit Micro。</li>
+</ul>
+<p>从产品角度看，乐高的EV3是最完善成熟的体系了，基于乐高积木为基础，产品的可玩性和创造新更高，软件的交互体验也是最好的，不过产品价格昂贵及相对复杂的组件也是不可忽略的因素。<br>面向中低端的产品，考虑到成本因素很多采用开源软件或者硬件定制化。</p>
+<p>从产品定位看，能力风暴的和乐高ev3属于一类体系。拥有自主研发的软件和硬件，只不过它们的市场定位有差，能力风暴专注于很多是在学校和教育领域。<br>作为成熟产品的迭代，考虑到老用户的使用习惯，我们还是尽可能的继承原版元素。减少后期的培训和使用障碍。<br>对于新用户而言，我们希望他们更快更高效的完成其项目。</p>
+<h2 id="优化点"><a href="#优化点" class="headerlink" title="优化点"></a>优化点</h2><ol>
+<li>去除模块组件的二级页面<br>原本需要二次点击的设置，我们可以把它放进第一层级</li>
+<li>图形化模块组件</li>
+<li>所见即所得</li>
+</ol>
+<h2 id="界面设计迭代"><a href="#界面设计迭代" class="headerlink" title="界面设计迭代"></a>界面设计迭代</h2><h3 id="图标迭代"><a href="#图标迭代" class="headerlink" title="图标迭代"></a>图标迭代</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-icon%E8%BF%AD%E4%BB%A3.png" alt=""></p>
+<h3 id="模块迭代"><a href="#模块迭代" class="headerlink" title="模块迭代"></a>模块迭代</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-%E6%A8%A1%E5%9D%97%E8%BF%AD%E4%BB%A3.png" alt=""></p>
+<h3 id="软件界面"><a href="#软件界面" class="headerlink" title="软件界面"></a>软件界面</h3><p><img src="http://psvg523f0.bkt.clouddn.com/%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%BC%96%E7%A8%8B-%E8%BD%AF%E4%BB%B6%E7%95%8C%E9%9D%A2.png" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MUI/" rel="tag"># MUI</a>
+          
+            <a href="/tags/UI/" rel="tag"># UI</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/25/对象—命名方法/" rel="prev" title="JavaScript-对象">
+                JavaScript-对象 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="shakingtomato">
+            
+              <p class="site-author-name" itemprop="name">shakingtomato</p>
+              <p class="site-description motion-element" itemprop="description">设计 技术 商业</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调研目的"><span class="nav-number">2.</span> <span class="nav-text">调研目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#产品调研"><span class="nav-number">3.</span> <span class="nav-text">产品调研</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Scratch"><span class="nav-number">3.1.</span> <span class="nav-text">Scratch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Blockly"><span class="nav-number">3.2.</span> <span class="nav-text">Blockly</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ardublock"><span class="nav-number">3.3.</span> <span class="nav-text">Ardublock</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mind-（Mindplus）"><span class="nav-number">3.4.</span> <span class="nav-text">Mind+（Mindplus）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乐高-EV3"><span class="nav-number">3.5.</span> <span class="nav-text">乐高 EV3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modkit-Micro"><span class="nav-number">3.6.</span> <span class="nav-text">Modkit Micro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sparki"><span class="nav-number">3.7.</span> <span class="nav-text">Sparki</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化点"><span class="nav-number">5.</span> <span class="nav-text">优化点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#界面设计迭代"><span class="nav-number">6.</span> <span class="nav-text">界面设计迭代</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图标迭代"><span class="nav-number">6.1.</span> <span class="nav-text">图标迭代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块迭代"><span class="nav-number">6.2.</span> <span class="nav-text">模块迭代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件界面"><span class="nav-number">6.3.</span> <span class="nav-text">软件界面</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">shakingtomato</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
