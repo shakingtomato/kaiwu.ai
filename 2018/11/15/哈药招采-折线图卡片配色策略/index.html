@@ -79,19 +79,21 @@
 
 
 
+<meta name="description" content="简介：招采智能化系统是我们给哈药开发的智能分析平台，前端实现主要使用vue框架和echarts数据库，我项目的负责UI和UX。当导入真实数据后，一些问题渐渐暴露出来。折线图上的卡片是其中一个问题，当我们使用echart库实现时卡片上的文字和配色不当，导致内容看不清。">
 <meta name="keywords" content="颜色,echarts">
 <meta property="og:type" content="article">
 <meta property="og:title" content="哈药招采-折线图卡片配色策略">
 <meta property="og:url" content="http://www.shakingtomato.com/2018/11/15/哈药招采-折线图卡片配色策略/index.html">
 <meta property="og:site_name" content="番茄实验室">
+<meta property="og:description" content="简介：招采智能化系统是我们给哈药开发的智能分析平台，前端实现主要使用vue框架和echarts数据库，我项目的负责UI和UX。当导入真实数据后，一些问题渐渐暴露出来。折线图上的卡片是其中一个问题，当我们使用echart库实现时卡片上的文字和配色不当，导致内容看不清。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/blog%E5%B0%81%E9%9D%A2_%E5%93%88%E8%8D%AF%E6%8B%9B%E9%87%87-%E6%8A%98%E7%BA%BF%E5%9B%BE%E5%8D%A1%E7%89%87%E9%85%8D%E8%89%B2%E7%AD%96%E7%95%A5.png">
 <meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E9%85%8D%E8%89%B2%E4%B8%8D%E5%BD%93.png">
 <meta property="og:image" content="http://psvg523f0.bkt.clouddn.com/%E5%93%88%E8%8D%AF%E8%AE%BE%E8%AE%A1%E7%AD%96%E7%95%A5-%E9%A2%9C%E8%89%B2%E6%B1%A0.png">
-<meta property="og:updated_time" content="2019-06-28T14:44:41.281Z">
+<meta property="og:updated_time" content="2019-06-29T05:20:52.491Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="哈药招采-折线图卡片配色策略">
-<meta name="twitter:image" content="http://psvg523f0.bkt.clouddn.com/blog%E5%B0%81%E9%9D%A2_%E5%93%88%E8%8D%AF%E6%8B%9B%E9%87%87-%E6%8A%98%E7%BA%BF%E5%9B%BE%E5%8D%A1%E7%89%87%E9%85%8D%E8%89%B2%E7%AD%96%E7%95%A5.png">
+<meta name="twitter:description" content="简介：招采智能化系统是我们给哈药开发的智能分析平台，前端实现主要使用vue框架和echarts数据库，我项目的负责UI和UX。当导入真实数据后，一些问题渐渐暴露出来。折线图上的卡片是其中一个问题，当我们使用echart库实现时卡片上的文字和配色不当，导致内容看不清。">
+<meta name="twitter:image" content="http://psvg523f0.bkt.clouddn.com/%E9%85%8D%E8%89%B2%E4%B8%8D%E5%BD%93.png">
 
 
 
@@ -353,10 +355,9 @@
       
 
       
-        <p><img src="http://psvg523f0.bkt.clouddn.com/blog%E5%B0%81%E9%9D%A2_%E5%93%88%E8%8D%AF%E6%8B%9B%E9%87%87-%E6%8A%98%E7%BA%BF%E5%9B%BE%E5%8D%A1%E7%89%87%E9%85%8D%E8%89%B2%E7%AD%96%E7%95%A5.png" alt=""></p>
+        <h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><p>招采智能化系统是我们给哈药开发的智能分析平台，前端实现主要使用vue框架和echarts数据库，我项目的负责UI和UX。当导入真实数据后，一些问题渐渐暴露出来。折线图上的卡片是其中一个问题，当我们使用echart库实现时卡片上的文字和配色不当，导致内容看不清。</p>
 <a id="more"></a>
-<h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p>通过人工智能和大数据分析为医药企业提供智能分析服务：<br>1.在保证购买质量的情况下，降低购买成本；<br>2.合理制定生产策略，优化生产流程，按时，保质，保量产出<br>3.发现潜在销售机会，提高管理效率，最终增加销售业绩</p>
-<h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><p>招采智能化系统是我们给哈药开发的智能分析平台，前端实现主要使用vue框架和echarts数据库，我项目的负责UI和UX。当导入真实数据后，一些问题渐渐暴露出来。折线图上的卡片是其中一个问题，当我们使用echart库实现时卡片上的文字和配色不当，导致内容看不清。</p>
+
 <h2 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h2><p>解决部分折线图上graphic颜色值配色问题。</p>
 <h2 id="问题追踪："><a href="#问题追踪：" class="headerlink" title="问题追踪："></a>问题追踪：</h2><p>通过和前端的沟通，发现卡片配色的一些原理：</p>
 <ul>
@@ -523,7 +524,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -556,7 +557,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目背景"><span class="nav-number">1.</span> <span class="nav-text">项目背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简介："><span class="nav-number">2.</span> <span class="nav-text">简介：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目的："><span class="nav-number">3.</span> <span class="nav-text">目的：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题追踪："><span class="nav-number">4.</span> <span class="nav-text">问题追踪：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配色策略说明"><span class="nav-number">5.</span> <span class="nav-text">配色策略说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新配色策略"><span class="nav-number">6.</span> <span class="nav-text">新配色策略</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介："><span class="nav-number">1.</span> <span class="nav-text">简介：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目的："><span class="nav-number">2.</span> <span class="nav-text">目的：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题追踪："><span class="nav-number">3.</span> <span class="nav-text">问题追踪：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配色策略说明"><span class="nav-number">4.</span> <span class="nav-text">配色策略说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新配色策略"><span class="nav-number">5.</span> <span class="nav-text">新配色策略</span></a></li></ol></div>
             
 
           </div>
